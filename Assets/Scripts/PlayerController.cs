@@ -7,7 +7,7 @@ using UnityEngine;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IPunObservable
 {
 
     public float speed = 10f;
@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D _rigidbody;
     private PhotonView _photonView;
-    
+
     void Start()
     {
         _photonView = GetComponent<PhotonView>();
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
         CheckSound();
         CheckAnimation();
-        
+
 //        _horizontalMove = Input.GetAxisRaw("Horizontal");
         var position = transform.position;
 
@@ -121,5 +121,19 @@ public class PlayerController : MonoBehaviour
 //                    flipX = true;
 //                }
 //            }
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+//        if (stream.IsWriting)
+//        {
+//            stream.SendNext(_rigidbody.velocity);
+//            stream.SendNext(_rigidbody.position);
+//        }
+//        else
+//        {
+//            _rigidbody.velocity = (Vector2) stream.ReceiveNext();
+//            _rigidbody.MovePosition(Vector2.Lerp(_rigidbody.position, (Vector2)stream.ReceiveNext(), Time.deltaTime));
+//        }
     }
 }
