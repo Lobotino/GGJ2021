@@ -376,6 +376,11 @@
           <e p="OnlineConnecter.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayersManager.cs" t="Include" />
+          <e p="ShadowsScript.cs" t="Include" />
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="$CutoutBumpwithShadows.shader" t="Include" />
+          <e p="$Sprites-Bumped Diffuse.shader" t="Include" />
         </e>
       </e>
       <e p="IndianaJonsClone.sln" t="IncludeFlat" />
