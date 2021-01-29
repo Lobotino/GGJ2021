@@ -10,13 +10,8 @@ public class OnlineConnecter : MonoBehaviour
     
     void Start()
     {
+        PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.ConnectUsingSettings();
         PhotonNetwork.GameVersion = gameVersion;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

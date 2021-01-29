@@ -10,8 +10,25 @@ public class OnlineCallbacks : MonoBehaviourPunCallbacks
     {
         Debug.Log("OnConnectedToMaster() was called by PUN.");
         
-        var roomOptions = new RoomOptions {IsVisible = true, MaxPlayers = 6};
+        var roomOptions = new RoomOptions {IsVisible = true, MaxPlayers = 10};
         PhotonNetwork.JoinOrCreateRoom("just_room", roomOptions, TypedLobby.Default);
+    }
+
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+        
+    }
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        if (!PlayersManager.UserId.Equals(otherPlayer.UserId))
+        {
+            GameObject gm = GameObject.Find("Player(" + otherPlayer.UserId + ")");
+            if (gm != null)
+            {
+                Destroy(gm);
+            }
+        }
     }
 
     public override void OnConnected()

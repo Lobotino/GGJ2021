@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using Photon.Pun;
 using UnityEngine;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
@@ -9,52 +10,37 @@ using Vector3 = UnityEngine.Vector3;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed = 1f;
-    public float runXCurrent = 1f;
+    public float speed = 10f;
     public GameObject mainCamera;
 
     private Rigidbody2D _rigidbody;
-
+    private PhotonView _photonView;
+    
     void Start()
     {
+        _photonView = GetComponent<PhotonView>();
         _rigidbody = GetComponent<Rigidbody2D>();
+        mainCamera = GameObject.Find("Main Camera");
     }
-
-    private float _horizontalMove;
-    public bool isRun;
 
     void FixedUpdate()
     {
 
         CheckSound();
         CheckAnimation();
-
-//        if (!photonView.IsMine)
-//        {
-//            armature.armature.flipX = flipX;
-//            if (isRun)
-//            {
-//                if (armature.armature.animation.lastAnimationName != "Run")
-//                    armature.armature.animation.GotoAndPlayByTime("Run");
-//            }
-//            else
-//            {
-//                if (armature.armature.animation.lastAnimationName != "Stand")
-//                    armature.armature.animation.GotoAndPlayByTime("Stand");
-//            }
-//        }
-//        else
-//        {
-
-        _horizontalMove = Input.GetAxisRaw("Horizontal");
+        
+//        _horizontalMove = Input.GetAxisRaw("Horizontal");
         var position = transform.position;
-        mainCamera.transform.position = new Vector3(position.x, position.y, -50);
-        
-        MovePlayer(position);
-        
-        if (Input.GetKeyDown(KeyCode.E))
+
+        if (_photonView.IsMine)
         {
-            //do some action
+            MovePlayer(position);
+            mainCamera.transform.position = new Vector3(position.x, position.y, -50);
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                //do some action
+            }
         }
     }
 
@@ -109,7 +95,7 @@ public class PlayerController : MonoBehaviour
 
     private void CheckAnimation()
     {
-        isRun = Mathf.Abs(_horizontalMove) > 0.002f;
+//        isRun = Mathf.Abs(_horizontalMove) > 0.002f;
 //            if (isRun)
 //            {
 //                if (armature.armature.animation.lastAnimationName != "Run")

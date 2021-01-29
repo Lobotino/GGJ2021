@@ -370,10 +370,12 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="GameManager.cs" t="Include" />
           <e p="InGameOnlineCallbacks.cs" t="Include" />
           <e p="OnlineCallbacks.cs" t="Include" />
           <e p="OnlineConnecter.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="PlayersManager.cs" t="Include" />
         </e>
       </e>
       <e p="IndianaJonsClone.sln" t="IncludeFlat" />
