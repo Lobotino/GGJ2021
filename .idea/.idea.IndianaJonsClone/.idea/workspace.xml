@@ -10,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="120" column="35" lean-forward="true" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
+            <state relative-caret-position="770">
+              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding>
                 <marker date="1611948985630" expanded="false" signature="6:207" ph="..." />
                 <marker date="1611948985630" expanded="true" signature="270:3712" ph="{...}" />
@@ -42,11 +42,16 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/codeandweb.com/Readme.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Code/Views/PhotonTransformView.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-734">
-              <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+              <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
               <folding>
                 <marker date="1610441458000" expanded="true" signature="0:454" ph="/*   Component to synchronize Transforms via PUN PhotonView. ... */" />
                 <marker date="1610441458000" expanded="true" signature="477:6783" ph="{...}" />
@@ -100,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="16" column="69" lean-forward="true" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+              <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
               <folding>
                 <marker date="1611945963296" expanded="true" signature="6:96" ph="..." />
                 <marker date="1611945963296" expanded="true" signature="138:725" ph="{...}" />
@@ -129,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnlineCallbacks.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding>
                 <marker date="1611945963262" expanded="false" signature="7:95" ph="..." />
                 <marker date="1611945963262" expanded="true" signature="153:1551" ph="{...}" />
@@ -154,7 +159,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnlineConnecter.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <marker date="1611947104070" expanded="false" signature="6:119" ph="..." />
                 <marker date="1611947104070" expanded="true" signature="165:388" ph="{...}" />
@@ -625,93 +630,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Photon/PhotonRealtime/Code/Player.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-836">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-              <folding>
-                <marker date="1610441557000" expanded="true" signature="0:555" ph="/*   Per client in a room, a Player is created. This client's Player is also ... */" />
-                <marker date="1610441557000" expanded="true" signature="662:20044" ph="{...}" />
-                <marker date="1610441557000" expanded="false" signature="675:1002" ph="..." />
-                <marker date="1610441557000" expanded="true" signature="1020:1299" ph="/// Summarizes a &quot;player&quot; within a room, identified (in that room) by ID (or &quot;actorNumber&quot;). ... " />
-                <marker date="1610441557000" expanded="true" signature="1323:20042" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="1338:1442" ph="/// Used internally to identify the masterclient of a room. ... " />
-                <marker date="1610441557000" expanded="true" signature="1611:1910" ph="///Identifier of this player in current room. Also known as: actorNumber or actorNumber. It's -1 outside of rooms ... " />
-                <marker date="1610441557000" expanded="true" signature="1941:2006" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="2179:2230" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="2346:2658" ph="///Non-unique nickname of this player. Synced automatically in a room. ... " />
-                <marker date="1610441557000" expanded="true" signature="2689:3218" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="2715:2781" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="2797:3208" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="2900:2964" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="3108:3194" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="3228:3545" ph="///UserId of the player, available when the room got created with RoomOptions.PublishUserId = true. ... " />
-                <marker date="1610441557000" expanded="true" signature="3607:3717" ph="/// True if this player is the Master Client of the current room. ... " />
-                <marker date="1610441557000" expanded="true" signature="3752:4013" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="3778:4003" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="3840:3910" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="4023:4600" ph="///If this player is active in the room (and getting events which are currently being sent). ... " />
-                <marker date="1610441557000" expanded="true" signature="4674:5092" ph="///Read-only cache for custom properties of player. Set via Player.SetCustomProperties. ... " />
-                <marker date="1610441557000" expanded="true" signature="5158:5364" ph="///Can be used to store a reference that's useful to know &quot;by player&quot;. ... " />
-                <marker date="1610441557000" expanded="true" signature="5408:5906" ph="/// Creates a player instance. ... " />
-                <marker date="1610441557000" expanded="true" signature="6033:6053" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="6063:6724" ph="/// Creates a player instance. ... " />
-                <marker date="1610441557000" expanded="true" signature="6834:7086" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="7097:7312" ph="/// Get a Player by ActorNumber (Player.ID). ... " />
-                <marker date="1610441557000" expanded="true" signature="7346:7521" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="7400:7457" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="7531:7684" ph="///Gets this Player's next Player, as sorted by ActorNumber (Player.ID). Wraps around. ... " />
-                <marker date="1610441557000" expanded="true" signature="7716:7785" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="7795:8172" ph="///Gets a Player's next Player, as sorted by ActorNumber (Player.ID). Wraps around. ... " />
-                <marker date="1610441557000" expanded="true" signature="8227:8401" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="8276:8333" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="8411:8807" ph="///Gets a Player's next Player, as sorted by ActorNumber (Player.ID). Wraps around. ... " />
-                <marker date="1610441557000" expanded="true" signature="8861:10396" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="8993:9050" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="9411:9861" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="9466:9629" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="9709:9847" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="9875:10291" ph="/* UnityEngine.Debug.LogWarning(&quot;Debug. &quot; + currentPlayerId + &quot; lower: &quot; + lowestId + &quot; higher: &quot; + nextHigherId  ... */" />
-                <marker date="1610441557000" expanded="true" signature="10407:10790" ph="///Caches properties for new Players or when updates of remote players are received. Use SetCustomProperties() fo ... " />
-                <marker date="1610441557000" expanded="true" signature="10876:12565" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="10991:11043" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="11112:12041" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="11276:12027" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="11332:11875" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="11379:11667" ph="/* the local playername is different than in the properties coming from the server ... */" />
-                <marker date="1610441557000" expanded="true" signature="11743:11853" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="11900:12009" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="12105:12207" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="12275:12430" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="12576:12685" ph="/// Brief summary string of the Player: ActorNumber and NickName ... " />
-                <marker date="1610441557000" expanded="true" signature="12727:12830" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="12840:13142" ph="/// String summary of the Player: player.ID, name and all custom properties of this user. ... " />
-                <marker date="1610441557000" expanded="true" signature="13179:13366" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="13376:13485" ph="/// If players are equal (by GetHasCode, which returns this.ID). ... " />
-                <marker date="1610441557000" expanded="true" signature="13531:13663" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="13673:13791" ph="/// Accompanies Equals, using the ID (actorNumber) as HashCode to return. ... " />
-                <marker date="1610441557000" expanded="true" signature="13833:13890" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="13900:14047" ph="/// Used internally, to update this client's playerID when assigned (doesn't change after assignment). ... " />
-                <marker date="1610441557000" expanded="true" signature="14104:14325" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="14145:14276" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="14337:17632" ph="/// Updates and synchronizes this Player's Custom Properties. Optionally, expectedProperties can be provided as c ... " />
-                <marker date="1610441557000" expanded="true" signature="17758:19457" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="17839:17897" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="18029:18984" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="18093:18591" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="18159:18241" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="18612:18970" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="19014:19420" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="19072:19142" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="19206:19406" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="19640:20036" ph="{...}" />
-                <marker date="1610441557000" expanded="true" signature="19727:19999" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1956">
@@ -923,7 +841,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="540" />
     <option name="y" value="-15" />
     <option name="width" value="1795" />
@@ -1003,8 +921,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1426" extended-state="7" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -1483,7 +1400,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="16" column="69" lean-forward="true" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+          <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
           <folding>
             <marker date="1611945963296" expanded="true" signature="6:96" ph="..." />
             <marker date="1611945963296" expanded="true" signature="138:725" ph="{...}" />
@@ -1497,7 +1414,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnlineCallbacks.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding>
             <marker date="1611945963262" expanded="false" signature="7:95" ph="..." />
             <marker date="1611945963262" expanded="true" signature="153:1551" ph="{...}" />
@@ -1978,7 +1895,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnlineConnecter.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <marker date="1611947104070" expanded="false" signature="6:119" ph="..." />
             <marker date="1611947104070" expanded="true" signature="165:388" ph="{...}" />
@@ -2175,7 +2092,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Code/Views/PhotonTransformView.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-734">
-          <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
           <folding>
             <marker date="1610441458000" expanded="true" signature="0:454" ph="/*   Component to synchronize Transforms via PUN PhotonView. ... */" />
             <marker date="1610441458000" expanded="true" signature="477:6783" ph="{...}" />
@@ -2217,8 +2134,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="120" column="35" lean-forward="true" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
+        <state relative-caret-position="770">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding>
             <marker date="1611948985630" expanded="false" signature="6:207" ph="..." />
             <marker date="1611948985630" expanded="true" signature="270:3712" ph="{...}" />
@@ -2244,6 +2161,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/codeandweb.com/Readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
