@@ -10,10 +10,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1936">
+            <state relative-caret-position="1870">
               <caret line="94" column="111" selection-start-line="94" selection-start-column="111" selection-end-line="94" selection-end-column="111" />
               <folding>
                 <marker date="1611936712884" expanded="false" signature="6:189" ph="..." />
@@ -43,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnlineConnecter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="176">
               <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <marker date="1611939721644" expanded="false" signature="6:119" ph="..." />
@@ -76,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/InGameOnlineCallbacks.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" column="46" selection-end-line="48" />
+            <state relative-caret-position="484">
+              <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
               <folding>
                 <marker date="1611940148454" expanded="false" signature="7:95" ph="..." />
                 <marker date="1611940148454" expanded="true" signature="159:975" ph="{...}" />
@@ -1244,47 +1244,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1936">
-          <caret line="94" column="111" selection-start-line="94" selection-start-column="111" selection-end-line="94" selection-end-column="111" />
-          <folding>
-            <marker date="1611936712884" expanded="false" signature="6:189" ph="..." />
-            <marker date="1611936712884" expanded="true" signature="236:3637" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="392:454" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="537:1473" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="594:1145" ph="/* if (!photonView.IsMine) ... */" />
-            <marker date="1611936712884" expanded="true" signature="1418:1467" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="1520:2485" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="1660:1979" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="1711:1789" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="1806:1969" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="1865:1955" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="2047:2366" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="2098:2176" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="2193:2356" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="2252:2342" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="2516:2730" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="2531:2724" ph="/* if (Math.Abs(_rigidbody.velocity.x) &gt; 0.01) //сука звук ... */" />
-            <marker date="1611936712884" expanded="true" signature="2765:3635" ph="{...}" />
-            <marker date="1611936712884" expanded="true" signature="2825:3629" ph="/* if (isRun) ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnlineConnecter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <marker date="1611939721644" expanded="false" signature="6:119" ph="..." />
-            <marker date="1611939721644" expanded="true" signature="165:414" ph="{...}" />
-            <marker date="1611939721644" expanded="true" signature="226:333" ph="{...}" />
-            <marker date="1611939721644" expanded="true" signature="391:412" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnlineCallbacks.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1306,8 +1265,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/InGameOnlineCallbacks.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="46" selection-end-line="48" />
+        <state relative-caret-position="484">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
           <folding>
             <marker date="1611940148454" expanded="false" signature="7:95" ph="..." />
             <marker date="1611940148454" expanded="true" signature="159:975" ph="{...}" />
@@ -1319,6 +1278,47 @@
             <marker date="1611940148454" expanded="true" signature="692:746" ph="{...}" />
             <marker date="1611940148454" expanded="true" signature="810:877" ph="{...}" />
             <marker date="1611940148454" expanded="true" signature="918:973" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnlineConnecter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <marker date="1611939721644" expanded="false" signature="6:119" ph="..." />
+            <marker date="1611939721644" expanded="true" signature="165:414" ph="{...}" />
+            <marker date="1611939721644" expanded="true" signature="226:333" ph="{...}" />
+            <marker date="1611939721644" expanded="true" signature="391:412" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="94" column="111" selection-start-line="94" selection-start-column="111" selection-end-line="94" selection-end-column="111" />
+          <folding>
+            <marker date="1611936712884" expanded="false" signature="6:189" ph="..." />
+            <marker date="1611936712884" expanded="true" signature="236:3637" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="392:454" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="537:1473" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="594:1145" ph="/* if (!photonView.IsMine) ... */" />
+            <marker date="1611936712884" expanded="true" signature="1418:1467" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="1520:2485" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="1660:1979" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="1711:1789" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="1806:1969" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="1865:1955" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="2047:2366" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="2098:2176" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="2193:2356" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="2252:2342" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="2516:2730" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="2531:2724" ph="/* if (Math.Abs(_rigidbody.velocity.x) &gt; 0.01) //сука звук ... */" />
+            <marker date="1611936712884" expanded="true" signature="2765:3635" ph="{...}" />
+            <marker date="1611936712884" expanded="true" signature="2825:3629" ph="/* if (isRun) ... */" />
           </folding>
         </state>
       </provider>
