@@ -385,10 +385,10 @@
           <e p="PreviewTrap.cs" t="Include" />
           <e p="RemovableItem.cs" t="Include" />
           <e p="ShadowsScript.cs" t="Include" />
+          <e p="StoneController.cs" t="Include" />
           <e p="TrapPrefs.cs" t="Include" />
           <e p="UserProperties.cs" t="Include" />
           <e p="Utils.cs" t="Include" />
-          <e p="VerticalStone.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
           <e p="$CutoutBumpwithShadows.shader" t="Include" />

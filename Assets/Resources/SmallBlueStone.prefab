@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 8159329583098102624}
   - component: {fileID: 6038883755868505943}
   - component: {fileID: 687234643242481227}
+  - component: {fileID: 2085099513079752822}
   m_Layer: 0
   m_Name: SmallBlueStone
   m_TagString: Traps
@@ -145,7 +146,7 @@ MonoBehaviour:
   - {x: -0.44363675, y: 0.18806791, z: 0}
   m_ShapePathHash: 1393946454
   m_Mesh: {fileID: 0}
-  m_InstanceId: 87014
+  m_InstanceId: 132982
 --- !u!50 &8159329583098102626
 Rigidbody2D:
   serializedVersion: 4
@@ -257,3 +258,16 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 1
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &2085099513079752822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8159329583098101913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b884f15a00cb24e8bc78a015b0f8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manaCost: 60

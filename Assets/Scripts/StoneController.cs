@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
+using Photon.Pun;
 using UnityEngine;
 
-public class VerticalStone : MonoBehaviour
+public class StoneController : MonoBehaviour, ITrapSetter
 {
     private Animator _animator;
     private Rigidbody2D _rigidbody2D;
@@ -66,5 +68,20 @@ public class VerticalStone : MonoBehaviour
                 player.GetComponent<Rigidbody2D>().AddForce(_rigidbody2D.velocity * forceModifier, ForceMode2D.Impulse);
             }
         }
+    }
+
+    public bool TryToInstantiateTrap(Vector2 mousePos)
+    {
+        if (Camera.main == null) return false;
+        var worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+        worldPos.z = 0;
+        RaycastHit2D neighbortCell = Physics2D.Raycast(worldPos, Vector2.zero);
+        if (neighbortCell.collider == null || !neighbortCell.collider.gameObject.tag.Equals("Borders") && !neighbortCell.collider.gameObject.tag.Equals("Traps"))
+        {
+            PhotonNetwork.Instantiate(isVertical ? "StoneVertical" : isLeft ? "StoneLeft" : "StoneRight", worldPos, Quaternion.identity);
+            return true;
+        }
+
+        return false;
     }
 }
