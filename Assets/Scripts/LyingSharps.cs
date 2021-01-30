@@ -19,13 +19,10 @@ public class LyingSharps : MonoBehaviour
     
     private static readonly int IsActiveAnimationState = Animator.StringToHash("isActive");
 
-    private Collider2D attackCollider;
-    
     void Start()
     {
         attackDelayInSeconds *= 50;
         sharpsUpDelayInSeconds *= 50;
-        attackCollider = GetComponent<BoxCollider2D>();
     }
 
     void FixedUpdate()
