@@ -48,6 +48,7 @@ MonoBehaviour:
   droticsCount: 10
   shotSpeedInSeconds: 0.3
   shotPower: 18
+  cellParallax: 0.9
 --- !u!1 &5325481381895522504
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
   droticsCount: 10
   shotSpeedInSeconds: 0.3
   shotPower: 18
+  cellParallax: 0.9
 --- !u!1 &5325481382083589654
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +111,7 @@ GameObject:
   - component: {fileID: 691080551158843668}
   m_Layer: 0
   m_Name: DroticsWallRight
-  m_TagString: Untagged
+  m_TagString: Traps
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

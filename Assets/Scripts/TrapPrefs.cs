@@ -4,7 +4,5 @@ using UnityEngine;
 
 public class TrapPrefs : MonoBehaviour
 {
-    public string trapName;
-    
-    public int needCells;
+    public float manaCost;
 }

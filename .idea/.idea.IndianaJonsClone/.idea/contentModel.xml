@@ -374,6 +374,7 @@
           <e p="DroticsController.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="InGameOnlineCallbacks.cs" t="Include" />
+          <e p="ITrapSetter.cs" t="Include" />
           <e p="LyingSharps.cs" t="Include" />
           <e p="MasterUI.cs" t="Include" />
           <e p="Menu" t="Include">

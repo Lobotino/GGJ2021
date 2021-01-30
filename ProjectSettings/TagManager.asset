@@ -7,6 +7,8 @@ TagManager:
   - Bullet
   - Drotic
   - Floors
+  - Borders
+  - Traps
   layers:
   - Default
   - TransparentFX

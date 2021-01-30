@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
@@ -72,25 +73,40 @@ public class MasterUI : MonoBehaviour
     {
         manaFieldImage.sizeDelta = new Vector2(currentMana, 12);
         manaMaxImage.SetActive(currentMana >= maxMana);
-        
-        
+
+
         if (Input.GetMouseButtonDown(0))
         {
             if (currentTrap != null)
             {
-                if (Camera.main == null) return;
-                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+//                if (Camera.main == null) return;
+//                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+//
+//                if (hit.collider != null)
+//                {
+//                    Debug.Log("Target Position: " + hit.collider.gameObject.transform.position);
+//                }
+//                else
+//                {
+                var mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 3f);
+//                    PhotonNetwork.Instantiate(currentTrap.name, Camera.main.ScreenToWorldPoint(mousePosition),
+//                        Quaternion.identity);
 
-                if (hit.collider != null)
+                if (IsEnoughMana(currentTrap))
                 {
-                    Debug.Log("Target Position: " + hit.collider.gameObject.transform.position);
+                    var trapSetter = currentTrap.GetComponent<ITrapSetter>();
+                    if (trapSetter == null)
+                    {
+                        trapSetter = currentTrap.GetComponentInChildren<ITrapSetter>();
+                    }
+                    
+                    if (trapSetter.TryToInstantiateTrap(mousePosition))
+                    {
+                        ConsumeMana(currentTrap);
+                    }
                 }
-                else
-                {
-                    var mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 3f);
-                    PhotonNetwork.Instantiate(currentTrap.name, Camera.main.ScreenToWorldPoint(mousePosition),
-                        Quaternion.identity);
-                }
+
+//                }
             }
         }
     }
@@ -107,9 +123,18 @@ public class MasterUI : MonoBehaviour
         }
     }
 
-    private bool IsEnoughMana()
+    private bool IsEnoughMana(GameObject currentTrap)
     {
-        return true; //TODO
+        return currentTrap != null && currentTrap.GetComponent<TrapPrefs>() != null &&
+               currentMana >= currentTrap.GetComponent<TrapPrefs>().manaCost;
+    }
+
+    private void ConsumeMana(GameObject currentTrap)
+    {
+        if (currentTrap != null && currentTrap.GetComponent<TrapPrefs>() != null)
+        {
+            currentMana -= currentTrap.GetComponent<TrapPrefs>().manaCost;
+        }
     }
     private void InstantiateChoosenObject(GameObject prefabObject)
     {
@@ -119,6 +144,7 @@ public class MasterUI : MonoBehaviour
         currentPreviewTrap = Instantiate(new GameObject(), Camera.main.ScreenToWorldPoint(mousePosition), Quaternion.identity);
         
         currentPreviewTrap.AddComponent<SpriteRenderer>().sprite = prefabObject.GetComponentInChildren<SpriteRenderer>().sprite;
+        currentPreviewTrap.GetComponent<SpriteRenderer>().sortingLayerName = "Traps0";
         currentPreviewTrap.AddComponent<PreviewTrap>();
     }
 
