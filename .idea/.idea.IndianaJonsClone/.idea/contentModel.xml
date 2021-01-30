@@ -372,6 +372,7 @@
         <e p="Scripts" t="Include">
           <e p="GameManager.cs" t="Include" />
           <e p="InGameOnlineCallbacks.cs" t="Include" />
+          <e p="LyingSharps.cs" t="Include" />
           <e p="OnlineCallbacks.cs" t="Include" />
           <e p="OnlineConnecter.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
@@ -381,6 +382,7 @@
         <e p="Shaders" t="Include">
           <e p="$CutoutBumpwithShadows.shader" t="Include" />
           <e p="$Sprites-Bumped Diffuse.shader" t="Include" />
+          <e p="SpriteShadow.shader" t="Include" />
         </e>
       </e>
       <e p="IndianaJonsClone.sln" t="IncludeFlat" />

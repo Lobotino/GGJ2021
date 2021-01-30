@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour, IPunObservable
     private Rigidbody2D _rigidbody;
     private PhotonView _photonView;
 
+    public int health = 30;
+    public bool isDead;
+    
+    
     void Start()
     {
         _photonView = GetComponent<PhotonView>();
@@ -25,7 +29,11 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
     void FixedUpdate()
     {
-
+        if (health <= 0)
+        {
+            MakeDeath();
+        }
+        
         CheckSound();
         CheckAnimation();
 
@@ -125,15 +133,29 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-//        if (stream.IsWriting)
-//        {
-//            stream.SendNext(_rigidbody.velocity);
-//            stream.SendNext(_rigidbody.position);
-//        }
-//        else
-//        {
-//            _rigidbody.velocity = (Vector2) stream.ReceiveNext();
-//            _rigidbody.MovePosition(Vector2.Lerp(_rigidbody.position, (Vector2)stream.ReceiveNext(), Time.deltaTime));
-//        }
+        if (stream.IsWriting)
+        {
+            stream.SendNext(health);
+        }
+        else
+        {
+            health = (int) stream.ReceiveNext();
+        }
+    }
+
+    public void Hurt(int damage)
+    {
+        health -= damage;
+        Debug.Log("That was hurt... Current health: " + health);
+    }
+
+    public void MakeDeath()
+    {
+        
+    }
+
+    public bool IsDead()
+    {
+        return isDead;
     }
 }
