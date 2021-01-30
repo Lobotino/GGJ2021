@@ -20,24 +20,33 @@ public class MasterUI : MonoBehaviour
     public float distance = 10f;
     
     private GameObject currentPreviewTrap;
-    
+
+    private float currentMana = 265.6f;
+    public float maxMana = 265.6f;
+
+    public float manaSpeedPerTick = 0.5f;
+
+    public RectTransform manaFieldImage;
+    public GameObject manaMaxImage;
     
     /**
      * Нужно называть prefabName так же как и кнопку UI на табле
      */
     public void OnTrapsChoose(string prefabName)
     {
+        if (currentPreviewTrap != null)
+        {
+            Destroy(currentPreviewTrap);
+            currentPreviewTrap = null;
+        }
+        
         if (currentName != null && currentName.Equals(prefabName) && currentUITrapImage != null)
         {
             //Снимаем выделение
             currentUITrapImage.color = Color.white;
-            currentUITrapImage = null;
             currentName = null;
-            if (currentPreviewTrap != null)
-            {
-                Destroy(currentPreviewTrap);
-                currentPreviewTrap = null;
-            }
+            currentUITrapImage = null;
+            currentTrap = null;
         }
         else
         {
@@ -61,6 +70,10 @@ public class MasterUI : MonoBehaviour
 
     private void Update()
     {
+        manaFieldImage.sizeDelta = new Vector2(currentMana, 12);
+        manaMaxImage.SetActive(currentMana >= maxMana);
+        
+        
         if (Input.GetMouseButtonDown(0))
         {
             if (currentTrap != null)
@@ -75,10 +88,22 @@ public class MasterUI : MonoBehaviour
                 else
                 {
                     var mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 3f);
-                    currentPreviewTrap = PhotonNetwork.Instantiate(currentTrap.name, Camera.main.ScreenToWorldPoint(mousePosition),
+                    PhotonNetwork.Instantiate(currentTrap.name, Camera.main.ScreenToWorldPoint(mousePosition),
                         Quaternion.identity);
                 }
             }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (currentMana + manaSpeedPerTick >= maxMana)
+        {
+            currentMana = maxMana;
+        }
+        else
+        {
+            currentMana += manaSpeedPerTick;
         }
     }
 

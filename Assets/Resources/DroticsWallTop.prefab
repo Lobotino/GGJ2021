@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5325481380207674088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.173, y: 0.253, z: 0}
+  m_LocalPosition: {x: -0.251, y: -0.389, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5325481382083589651}
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 0
-  isVertical: 0
+  isVertical: 1
   droticsCount: 10
   shotSpeedInSeconds: 0.3
   shotPower: 18
@@ -73,7 +73,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5325481381895522504}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.17300008, y: -0.227, z: 0}
+  m_LocalPosition: {x: 0.259, y: -0.389, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5325481382083589651}
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 0
-  isVertical: 0
+  isVertical: 1
   droticsCount: 10
   shotSpeedInSeconds: 0.3
   shotPower: 18
@@ -106,9 +106,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5325481382083589651}
   - component: {fileID: 5325481382083589652}
-  - component: {fileID: 4443721072544086635}
+  - component: {fileID: 6560410288054536218}
   m_Layer: 0
-  m_Name: DroticsWallLeft
+  m_Name: DroticsWallTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +170,7 @@ SpriteRenderer:
   m_SortingLayerID: -869080445
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d037d718d17ce734d9a259fd390e41f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44bfa1a43f4744644acd2f8a10663f52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -181,7 +181,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4443721072544086635
+--- !u!114 &6560410288054536218
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

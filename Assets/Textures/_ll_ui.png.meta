@@ -1,0 +1,502 @@
+fileFormatVersion: 2
+guid: 62235456522312648901ac9bbfdbd044
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6596487330917731469
+    second: _ll_ui_0
+  - first:
+      213: -1285751796482084196
+    second: _ll_ui_1
+  - first:
+      213: -2867374392112441411
+    second: _ll_ui_2
+  - first:
+      213: 2649339621266197955
+    second: _ll_ui_3
+  - first:
+      213: -9131049836588728893
+    second: _ll_ui_4
+  - first:
+      213: 5076501295840357849
+    second: _ll_ui_5
+  - first:
+      213: -1988510133288198986
+    second: _ll_ui_6
+  - first:
+      213: -2968880661654614175
+    second: _ll_ui_7
+  - first:
+      213: -2657951916852974062
+    second: _ll_ui_8
+  - first:
+      213: -3245045210124829166
+    second: _ll_ui_9
+  - first:
+      213: 116339647527849424
+    second: _ll_ui_10
+  - first:
+      213: -968201975010626999
+    second: _ll_ui_11
+  - first:
+      213: 4251598495782873940
+    second: _ll_ui_0
+  - first:
+      213: 1076316432938442803
+    second: _ll_ui_1
+  - first:
+      213: 2003205815868312608
+    second: _ll_ui_2
+  - first:
+      213: 6852858661233829852
+    second: _ll_ui_3
+  - first:
+      213: 3677788609877160231
+    second: _ll_ui_4
+  - first:
+      213: -3756043495882127444
+    second: _ll_ui_5
+  - first:
+      213: 8477582535728918330
+    second: _ll_ui_6
+  - first:
+      213: -6668543914918690121
+    second: _ll_ui_7
+  - first:
+      213: -4347169115868029979
+    second: _ll_ui_8
+  - first:
+      213: 5578632663360858451
+    second: _ll_ui_9
+  - first:
+      213: -1935191921992597446
+    second: _ll_ui_10
+  - first:
+      213: -2630210381532230637
+    second: _ll_ui_11
+  - first:
+      213: 6105779839414481324
+    second: _ll_ui_12
+  - first:
+      213: 6538046843110088558
+    second: _ll_ui_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: _ll_ui_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 241
+        width: 54
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373b843e8b19474a0800000000000000
+      internalID: -6596487330917731469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_1
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 289
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c927d55ad87182ee0800000000000000
+      internalID: -1285751796482084196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 290
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db71610be2a0538d0800000000000000
+      internalID: -2867374392112441411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_3
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 289
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd80f6495854c420800000000000000
+      internalID: 2649339621266197955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 289
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd7dbf4d8ef74180800000000000000
+      internalID: -9131049836588728893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_5
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 289
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddef58380b537640800000000000000
+      internalID: 5076501295840357849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_6
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 289
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc9711c1946764e0800000000000000
+      internalID: -1988510133288198986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_7
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 267
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16fcc8d94ca6cc6d0800000000000000
+      internalID: -2968880661654614175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_8
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 268
+        width: 16
+        height: 12
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ee8e560de0d1bd0800000000000000
+      internalID: -2657951916852974062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_9
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 267
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e3d6a039847f2d0800000000000000
+      internalID: -3245045210124829166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 194
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd01340b425d9100800000000000000
+      internalID: 116339647527849424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 194
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942f8a8fe614092f0800000000000000
+      internalID: -968201975010626999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_12
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 241
+        width: 88
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5091633, y: 0.48486063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1ba050a661cb450800000000000000
+      internalID: 6105779839414481324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ll_ui_13
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 241
+        width: 54
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fd078b6fecbba50800000000000000
+      internalID: 6538046843110088558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
