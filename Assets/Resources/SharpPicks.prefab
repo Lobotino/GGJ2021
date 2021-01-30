@@ -453,6 +453,8 @@ GameObject:
   - component: {fileID: 5472030803124679845}
   - component: {fileID: 5472030803124679844}
   - component: {fileID: 5472030803124679847}
+  - component: {fileID: -5822061491068499681}
+  - component: {fileID: 3264742066320754417}
   m_Layer: 0
   m_Name: SharpPicks
   m_TagString: Untagged
@@ -522,6 +524,42 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &-5822061491068499681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5472030803124679846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b884f15a00cb24e8bc78a015b0f8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trapName: SharpPicks
+  needCells: 1
+--- !u!114 &3264742066320754417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5472030803124679846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 1
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &5472030803143376180
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +571,7 @@ GameObject:
   - component: {fileID: 5472030803143376178}
   - component: {fileID: 5472030803143376181}
   m_Layer: 0
-  m_Name: BottomSprite
+  m_Name: SharpPicksPreview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -23,9 +23,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private MasterUI _masterUi;
     private void PrepareMasterGame()
     {
         masterLight.SetActive(true);
+        _masterUi = GameObject.Find("MasterManager").GetComponent<MasterUI>();
+        _masterUi.ShowMasterPanels();
     }
 
     private void PreparePlayerGame()

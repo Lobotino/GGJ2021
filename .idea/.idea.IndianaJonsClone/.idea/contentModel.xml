@@ -373,12 +373,15 @@
           <e p="GameManager.cs" t="Include" />
           <e p="InGameOnlineCallbacks.cs" t="Include" />
           <e p="LyingSharps.cs" t="Include" />
+          <e p="MasterUI.cs" t="Include" />
           <e p="Menu" t="Include">
             <e p="MenuConnectorManager.cs" t="Include" />
             <e p="OnlineCallbacks.cs" t="Include" />
           </e>
           <e p="PlayerController.cs" t="Include" />
+          <e p="PreviewTrap.cs" t="Include" />
           <e p="ShadowsScript.cs" t="Include" />
+          <e p="TrapPrefs.cs" t="Include" />
           <e p="UserProperties.cs" t="Include" />
           <e p="Utils.cs" t="Include" />
         </e>

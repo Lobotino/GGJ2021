@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 3377088673418460157}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.68, y: -4.48, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   - {x: -1.1582025, y: -0.3087126, z: 0}
   m_ShapePathHash: -2126015951
   m_Mesh: {fileID: 0}
-  m_InstanceId: 23450
+  m_InstanceId: 50830
 --- !u!58 &6960141554499980347
 CircleCollider2D:
   m_ObjectHideFlags: 0
