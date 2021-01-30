@@ -6,21 +6,33 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    public GameObject playerInstance;
+    public GameObject masterLight;
+    public GameObject playerPrefab;
     
     void Start()
     {
-        if (!UserProperties.IsMasterInstance && UserProperties.LocalPlayerInstance == null)
+        Debug.Log("isMaster " + Utils.IsPlayerMaster());
+        
+        if (!Utils.IsPlayerMaster() && UserProperties.LocalPlayerInstance == null)
         {
-            UserProperties.LocalPlayerInstance = PhotonNetwork.Instantiate(playerInstance.name, new Vector3(0f, 0f, 0f), Quaternion.identity);
-            UserProperties.LocalPlayerInstance.name = "Player(" + PhotonNetwork.LocalPlayer.UserId + ")";
-            UserProperties.UserId = PhotonNetwork.LocalPlayer.UserId;
+            PreparePlayerGame();
+        }
+        else
+        {
+            PrepareMasterGame();
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void PrepareMasterGame()
     {
-        
+        masterLight.SetActive(true);
     }
+
+    private void PreparePlayerGame()
+    {
+        UserProperties.LocalPlayerInstance = PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(0f, 0f, 0f), Quaternion.identity);
+        UserProperties.LocalPlayerInstance.name = "Player(" + PhotonNetwork.LocalPlayer.UserId + ")";
+        UserProperties.UserId = PhotonNetwork.LocalPlayer.UserId;
+    }
+    
 }
