@@ -10,11 +10,11 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
-        if (!PlayersManager.isMasterInstance && PlayersManager.LocalPlayerInstance == null)
+        if (!UserProperties.IsMasterInstance && UserProperties.LocalPlayerInstance == null)
         {
-            PlayersManager.LocalPlayerInstance = PhotonNetwork.Instantiate(playerInstance.name, new Vector3(0f, 0f, 0f), Quaternion.identity);
-            PlayersManager.LocalPlayerInstance.name = "Player(" + PhotonNetwork.LocalPlayer.UserId + ")";
-            PlayersManager.UserId = PhotonNetwork.LocalPlayer.UserId;
+            UserProperties.LocalPlayerInstance = PhotonNetwork.Instantiate(playerInstance.name, new Vector3(0f, 0f, 0f), Quaternion.identity);
+            UserProperties.LocalPlayerInstance.name = "Player(" + PhotonNetwork.LocalPlayer.UserId + ")";
+            UserProperties.UserId = PhotonNetwork.LocalPlayer.UserId;
         }
     }
 

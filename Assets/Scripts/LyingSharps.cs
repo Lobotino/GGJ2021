@@ -56,15 +56,6 @@ public class LyingSharps : MonoBehaviour
         }
     }
 
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.tag.Equals("Player"))
-        {
-            HurtPlayer(other.gameObject);
-        }
-    }
-
     private void HurtPlayer(GameObject playerObj)
     {
         if (!isAttackDelay)
