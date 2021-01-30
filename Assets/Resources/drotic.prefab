@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 536817123913258361}
   - component: {fileID: 6264912096105005762}
   - component: {fileID: 9022417590086656386}
+  - component: {fileID: 8212597655348905347}
   m_Layer: 0
   m_Name: drotic
   m_TagString: Drotic
@@ -213,3 +214,16 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 1
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &8212597655348905347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165936479077066415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dac30d03c1105f429db408032f06fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsBeforeDestroy: 3

@@ -15,15 +15,24 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
     private Rigidbody2D _rigidbody;
     private PhotonView _photonView;
+    private SpriteRenderer _spriteRenderer;
+    private Animator _animator;
 
     public int health = 30;
     public bool isDead;
-    
-    
+
+    private bool isMoveHorizontal, isFlip, isMoveForward, isMoveBackward, isIdle = true;
+    private static readonly int IsMoveForward = Animator.StringToHash("isMoveForward");
+    private static readonly int IsMoveHorizontal = Animator.StringToHash("isMoveHorizontal");
+    private static readonly int IsMoveBackward = Animator.StringToHash("isMoveBackward");
+    private static readonly int IsIdle = Animator.StringToHash("isIdle");
+
     void Start()
     {
         _photonView = GetComponent<PhotonView>();
         _rigidbody = GetComponent<Rigidbody2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _animator = GetComponent<Animator>();
         mainCamera = GameObject.Find("Main Camera");
     }
 
@@ -61,12 +70,20 @@ public class PlayerController : MonoBehaviour, IPunObservable
             if (Input.GetKey(KeyCode.A))
             {
                 resultXMove = position.x - speed;
+                isMoveHorizontal = true;
+                isFlip = true;
             }
             else
             {
                 if (Input.GetKey(KeyCode.D))
                 {
                     resultXMove = position.x + speed;
+                    isMoveHorizontal = true;
+                    isFlip = false;
+                }
+                else
+                {
+                    isMoveHorizontal = false;
                 }
             }
         }
@@ -75,6 +92,8 @@ public class PlayerController : MonoBehaviour, IPunObservable
         {
             if (Input.GetKey(KeyCode.S))
             {
+                isMoveBackward = true;
+                isMoveForward = false;
                 resultYMove = position.y - speed;
             }
             else
@@ -82,6 +101,13 @@ public class PlayerController : MonoBehaviour, IPunObservable
                 if (Input.GetKey(KeyCode.W))
                 {
                     resultYMove = position.y + speed;
+                    isMoveForward = true;
+                    isMoveBackward = false;
+                }
+                else
+                {
+                    isMoveBackward = false;
+                    isMoveForward = false;
                 }
             }
         }
@@ -103,32 +129,74 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
     private void CheckAnimation()
     {
-//        isRun = Mathf.Abs(_horizontalMove) > 0.002f;
-//            if (isRun)
-//            {
-//                if (armature.armature.animation.lastAnimationName != "Run")
-//                    armature.armature.animation.GotoAndPlayByTime("Run");
-//            }
-//            else
-//            {
-//                if (armature.armature.animation.lastAnimationName != "Stand")
-//                    armature.armature.animation.GotoAndPlayByTime("Stand");
-//            }
-//
-//
-//            if (_horizontalMove > 0)
-//            {
-//                armature.armature.flipX = false;
-//                flipX = false;
-//            }
-//            else
-//            {
-//                if (_horizontalMove < 0)
-//                {
-//                    armature.armature.flipX = true;
-//                    flipX = true;
-//                }
-//            }
+        _spriteRenderer.flipX = isFlip;
+
+        if (isMoveForward)
+        {
+            AnimMoveForward();
+        }
+        else
+        {
+            if (isMoveHorizontal)
+            {
+                AnimMoveHorizontal();
+            }
+            else
+            {
+                if (isMoveBackward)
+                {
+                    AnimMoveBackward();
+                }
+                else
+                {
+                    AnimIdle();
+                }
+            }
+        }
+    }
+
+    private void AnimMoveForward()
+    {
+        isMoveForward = true;
+        isMoveBackward = false;
+        isMoveHorizontal = false;
+        isIdle = false;
+        SyncWithAnimator();
+    }
+    
+    private void AnimMoveBackward()
+    {
+        isMoveForward = false;
+        isMoveBackward = true;
+        isMoveHorizontal = false;
+        isIdle = false;
+        SyncWithAnimator();
+    }
+    
+    private void AnimMoveHorizontal()
+    {
+        isMoveForward = false;
+        isMoveBackward = false;
+        isMoveHorizontal = true;
+        isIdle = false;
+        SyncWithAnimator();
+    }
+    
+    private void AnimIdle()
+    {
+        isMoveForward = false;
+        isMoveBackward = false;
+        isMoveHorizontal = false;
+        isIdle = true;
+        SyncWithAnimator();
+    }
+
+    private void SyncWithAnimator()
+    {
+        _animator.SetBool(IsMoveForward, isMoveForward);
+        _animator.SetBool(IsMoveBackward, isMoveBackward);
+        _animator.SetBool(IsMoveHorizontal, isMoveHorizontal);
+        _animator.SetBool(IsIdle, isIdle);
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -136,10 +204,20 @@ public class PlayerController : MonoBehaviour, IPunObservable
         if (stream.IsWriting)
         {
             stream.SendNext(health);
+            stream.SendNext(isIdle);
+            stream.SendNext(isFlip);
+            stream.SendNext(isMoveBackward);
+            stream.SendNext(isMoveForward);
+            stream.SendNext(isMoveHorizontal);
         }
         else
         {
             health = (int) stream.ReceiveNext();
+            isIdle = (bool) stream.ReceiveNext();
+            isFlip = (bool) stream.ReceiveNext();
+            isMoveBackward = (bool) stream.ReceiveNext();
+            isMoveForward = (bool) stream.ReceiveNext();
+            isMoveHorizontal = (bool) stream.ReceiveNext();
         }
     }
 

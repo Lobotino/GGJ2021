@@ -382,6 +382,7 @@
           </e>
           <e p="PlayerController.cs" t="Include" />
           <e p="PreviewTrap.cs" t="Include" />
+          <e p="RemovableItem.cs" t="Include" />
           <e p="ShadowsScript.cs" t="Include" />
           <e p="TrapPrefs.cs" t="Include" />
           <e p="UserProperties.cs" t="Include" />

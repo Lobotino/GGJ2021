@@ -8,9 +8,12 @@ public class Drotic : MonoBehaviour
     public int damage = 2;
 
     private Rigidbody2D _rigidbody2D;
+
+    private RemovableItem _removableItem;
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _removableItem = GetComponent<RemovableItem>();
     }
     
     public void OnTriggerEnter2D(Collider2D other)
@@ -31,6 +34,7 @@ public class Drotic : MonoBehaviour
                 if (_rigidbody2D != null)
                 {
                     _rigidbody2D.velocity = new Vector2(0, 0);
+                    _removableItem.DestroySelfAfterTimer();
                 }
             }
         }
