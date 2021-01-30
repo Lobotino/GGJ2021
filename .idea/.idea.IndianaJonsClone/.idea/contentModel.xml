@@ -370,6 +370,8 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Drotic.cs" t="Include" />
+          <e p="DroticsController.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="InGameOnlineCallbacks.cs" t="Include" />
           <e p="LyingSharps.cs" t="Include" />
