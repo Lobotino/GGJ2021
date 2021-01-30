@@ -495,7 +495,7 @@ MonoBehaviour:
   - {fileID: 5472030802696098864}
   attackDelayInSeconds: 1
   damage: 4
-  sharpsUpDelayInSeconds: 2
+  sharpsUpDelayInSeconds: 1
 --- !u!61 &5472030803124679847
 BoxCollider2D:
   m_ObjectHideFlags: 0

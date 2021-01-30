@@ -19,10 +19,13 @@ public class LyingSharps : MonoBehaviour
     
     private static readonly int IsActiveAnimationState = Animator.StringToHash("isActive");
 
+    private Collider2D attackCollider;
+    
     void Start()
     {
         attackDelayInSeconds *= 50;
         sharpsUpDelayInSeconds *= 50;
+        attackCollider = GetComponent<BoxCollider2D>();
     }
 
     void FixedUpdate()
@@ -33,7 +36,6 @@ public class LyingSharps : MonoBehaviour
             if (currentSharpsUpDelay >= sharpsUpDelayInSeconds)
             {
                 currentSharpsUpDelay = 0;
-                isSharpsUp = false;
                 SharpsDown();
             }
         }
@@ -86,18 +88,16 @@ public class LyingSharps : MonoBehaviour
 
     private void SharpsUp()
     {
+        isSharpsUp = true;
         foreach (var sharp in movableSharps)
         {
             sharp.SetBool(IsActiveAnimationState, true);
         }
-//
-//        var position = transform.position;
-//        position = Vector2.Lerp(position, new Vector2(position.x, position.y + (transform.localScale. * 0.6)), )
-//        transform.position = position;
     }
     
     private void SharpsDown()
     {
+        isSharpsUp = false;
         foreach (var sharp in movableSharps)
         {
             sharp.SetBool(IsActiveAnimationState, false);
