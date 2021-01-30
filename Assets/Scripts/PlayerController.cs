@@ -18,9 +18,12 @@ public class PlayerController : MonoBehaviour, IPunObservable
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
 
-    public int health = 30;
+    public int health = 100;
+    public int heardsUiCount = 5;
     public bool isDead;
-
+    public GameObject[] heardUI, brokenHeardsUI;
+    
+    
     private bool isMoveHorizontal, isFlip, isMoveForward, isMoveBackward, isIdle = true;
     private static readonly int IsMoveForward = Animator.StringToHash("isMoveForward");
     private static readonly int IsMoveHorizontal = Animator.StringToHash("isMoveHorizontal");
@@ -34,14 +37,35 @@ public class PlayerController : MonoBehaviour, IPunObservable
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
         mainCamera = GameObject.Find("Main Camera");
+
+        for (int i = 0; i < 5; i++)
+        {
+            heardUI[i] = GameObject.Find("Heart" + i);
+            brokenHeardsUI[i] = GameObject.Find("BrokenHearts" + i);
+        }
     }
 
     void FixedUpdate()
     {
+        heardsUiCount = health / 20;
+        for (var i = 0; i < 5; i++)
+        {
+            if (i > heardsUiCount)
+            {
+                heardUI[i].SetActive(false);
+                brokenHeardsUI[i].SetActive(true);
+            }
+            else
+            {
+                heardUI[i].SetActive(true);
+                brokenHeardsUI[i].SetActive(false);
+            }
+        }
         if (health <= 0)
         {
             MakeDeath();
         }
+        
         
         CheckSound();
         CheckAnimation();
@@ -209,6 +233,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
             stream.SendNext(isMoveBackward);
             stream.SendNext(isMoveForward);
             stream.SendNext(isMoveHorizontal);
+            stream.SendNext(isDead);
         }
         else
         {
@@ -218,6 +243,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
             isMoveBackward = (bool) stream.ReceiveNext();
             isMoveForward = (bool) stream.ReceiveNext();
             isMoveHorizontal = (bool) stream.ReceiveNext();
+            isDead = (bool) stream.ReceiveNext();
         }
     }
 
@@ -225,11 +251,21 @@ public class PlayerController : MonoBehaviour, IPunObservable
     {
         health -= damage;
         Debug.Log("That was hurt... Current health: " + health);
+        
+        if (health <= 0)
+        {
+            MakeDeath();
+        }
     }
 
     public void MakeDeath()
     {
-        
+        for (var i = 0; i < 5; i++)
+        {
+            heardUI[i].SetActive(false);
+            brokenHeardsUI[i].SetActive(true);
+        }
+        isDead = true;
     }
 
     public bool IsDead()

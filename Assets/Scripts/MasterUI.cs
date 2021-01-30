@@ -29,6 +29,18 @@ public class MasterUI : MonoBehaviour
 
     public RectTransform manaFieldImage;
     public GameObject manaMaxImage;
+
+    private float bottomCup, leftWidthCup, rightWidthCup;
+
+    void Start()
+    {
+        if (Camera.main == null) return;
+
+        var main = Camera.main;
+        bottomCup = main.pixelHeight / 100 * 20;
+        leftWidthCup = main.pixelWidth / 100 * 10;
+        rightWidthCup = main.pixelWidth - leftWidthCup;
+    }
     
     /**
      * Нужно называть prefabName так же как и кнопку UI на табле
@@ -79,34 +91,26 @@ public class MasterUI : MonoBehaviour
         {
             if (currentTrap != null)
             {
-//                if (Camera.main == null) return;
-//                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-//
-//                if (hit.collider != null)
-//                {
-//                    Debug.Log("Target Position: " + hit.collider.gameObject.transform.position);
-//                }
-//                else
-//                {
-                var mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 3f);
-//                    PhotonNetwork.Instantiate(currentTrap.name, Camera.main.ScreenToWorldPoint(mousePosition),
-//                        Quaternion.identity);
+                if (Camera.main == null) return;
 
-                if (IsEnoughMana(currentTrap))
+                var mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 3f);
+
+                if (mousePosition.y >= bottomCup || mousePosition.x < leftWidthCup || mousePosition.x > rightWidthCup)
                 {
-                    var trapSetter = currentTrap.GetComponent<ITrapSetter>();
-                    if (trapSetter == null)
+                    if (IsEnoughMana(currentTrap))
                     {
-                        trapSetter = currentTrap.GetComponentInChildren<ITrapSetter>();
-                    }
-                    
-                    if (trapSetter.TryToInstantiateTrap(mousePosition))
-                    {
-                        ConsumeMana(currentTrap);
+                        var trapSetter = currentTrap.GetComponent<ITrapSetter>();
+                        if (trapSetter == null)
+                        {
+                            trapSetter = currentTrap.GetComponentInChildren<ITrapSetter>();
+                        }
+
+                        if (trapSetter.TryToInstantiateTrap(mousePosition))
+                        {
+                            ConsumeMana(currentTrap);
+                        }
                     }
                 }
-
-//                }
             }
         }
     }

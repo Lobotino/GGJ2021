@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject masterLight;
     public GameObject playerPrefab;
+
+    public GameObject playerUI, masterUI;
     
     void Start()
     {
@@ -22,20 +24,19 @@ public class GameManager : MonoBehaviour
             PrepareMasterGame();
         }
     }
-
-    private MasterUI _masterUi;
     private void PrepareMasterGame()
     {
         masterLight.SetActive(true);
-        _masterUi = GameObject.Find("MasterManager").GetComponent<MasterUI>();
-        _masterUi.ShowMasterPanels();
+        masterUI.SetActive(true);
     }
 
     private void PreparePlayerGame()
     {
-        UserProperties.LocalPlayerInstance = PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(0f, 0f, 0f), Quaternion.identity);
+        UserProperties.LocalPlayerInstance = PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(-100f, -100f, 0f), Quaternion.identity);
         UserProperties.LocalPlayerInstance.name = "Player(" + PhotonNetwork.LocalPlayer.UserId + ")";
         UserProperties.UserId = PhotonNetwork.LocalPlayer.UserId;
+        
+        playerUI.SetActive(true);
     }
     
 }
