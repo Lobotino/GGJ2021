@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour, IPunObservable
     private PhotonView _photonView;
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
-
+    private LightScript _lightScript;
+    
     public int health = 100;
     public int heardsUiCount = 5;
     public bool isDead;
@@ -36,6 +37,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
         _rigidbody = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
+        _lightScript = GetComponent<LightScript>();
         mainCamera = GameObject.Find("Main Camera");
 
         for (int i = 0; i < 5; i++)
@@ -186,6 +188,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
         isMoveHorizontal = false;
         isIdle = false;
         SyncWithAnimator();
+        _lightScript.SetMods(0, 1);
     }
     
     private void AnimMoveBackward()
@@ -195,6 +198,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
         isMoveHorizontal = false;
         isIdle = false;
         SyncWithAnimator();
+        _lightScript.SetMods(0, -2);
     }
     
     private void AnimMoveHorizontal()
@@ -204,6 +208,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
         isMoveHorizontal = true;
         isIdle = false;
         SyncWithAnimator();
+        _lightScript.SetMods(isFlip ? -1 : 1, 0);
     }
     
     private void AnimIdle()

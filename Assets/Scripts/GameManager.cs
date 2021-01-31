@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     {
         masterLight.SetActive(true);
         masterUI.SetActive(true);
+
+        GameObject.Find("Main Camera").AddComponent<MasterCameraControl>();
     }
 
     private void PreparePlayerGame()

@@ -375,7 +375,9 @@
           <e p="GameManager.cs" t="Include" />
           <e p="InGameOnlineCallbacks.cs" t="Include" />
           <e p="ITrapSetter.cs" t="Include" />
+          <e p="LightScript.cs" t="Include" />
           <e p="LyingSharps.cs" t="Include" />
+          <e p="MasterCameraControl.cs" t="Include" />
           <e p="MasterUI.cs" t="Include" />
           <e p="Menu" t="Include">
             <e p="MenuConnectorManager.cs" t="Include" />
@@ -389,6 +391,7 @@
           <e p="TrapPrefs.cs" t="Include" />
           <e p="UserProperties.cs" t="Include" />
           <e p="Utils.cs" t="Include" />
+          <e p="WebScript.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
           <e p="$CutoutBumpwithShadows.shader" t="Include" />
