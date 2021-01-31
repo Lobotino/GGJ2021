@@ -109,6 +109,12 @@ MonoBehaviour:
   health: 100
   heardsUiCount: 5
   isDead: 0
+  isInHat: 0
+  hasBlueStone: 0
+  hasRedStone: 0
+  hasBigLight: 0
+  hasGoldenStatue: 0
+  keysCount: 0
   heardUI:
   - {fileID: 0}
   - {fileID: 0}
@@ -121,6 +127,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  countOfKeysText: {fileID: 0}
 --- !u!50 &3377088673418460097
 Rigidbody2D:
   serializedVersion: 4

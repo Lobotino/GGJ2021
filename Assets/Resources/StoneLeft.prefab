@@ -219,6 +219,7 @@ MonoBehaviour:
   startRotationForHorizontal: 100
   isVertical: 0
   isLeft: 1
+  isUp: 0
 --- !u!114 &6038883755868505943
 MonoBehaviour:
   m_ObjectHideFlags: 0

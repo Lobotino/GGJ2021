@@ -9,6 +9,7 @@ TagManager:
   - Floors
   - Borders
   - Traps
+  - Item
   layers:
   - Default
   - TransparentFX

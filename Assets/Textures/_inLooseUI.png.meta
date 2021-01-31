@@ -1,0 +1,730 @@
+fileFormatVersion: 2
+guid: c7a441f9ebd13054198aa8fbcd3036cf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7631575008650817010
+    second: _inLooseUI_0
+  - first:
+      213: 4419349356602617408
+    second: _inLooseUI_1
+  - first:
+      213: 9194574546010858778
+    second: _inLooseUI_2
+  - first:
+      213: -3298134761709615040
+    second: _inLooseUI_3
+  - first:
+      213: -8521156510693653746
+    second: _inLooseUI_4
+  - first:
+      213: 5274848470578965785
+    second: _inLooseUI_5
+  - first:
+      213: 8516116823164286946
+    second: _inLooseUI_6
+  - first:
+      213: -5282097694067020676
+    second: _inLooseUI_7
+  - first:
+      213: -6734089485186935390
+    second: _inLooseUI_8
+  - first:
+      213: -1611161859233673816
+    second: _inLooseUI_9
+  - first:
+      213: 2173250574042646447
+    second: _inLooseUI_10
+  - first:
+      213: 8005090744342454903
+    second: _inLooseUI_11
+  - first:
+      213: 4265237063963522342
+    second: _inLooseUI_12
+  - first:
+      213: 5929360088163775508
+    second: _inLooseUI_13
+  - first:
+      213: -5383861022652625411
+    second: _inLooseUI_14
+  - first:
+      213: -8533090161492726607
+    second: _inLooseUI_15
+  - first:
+      213: 8414204635168458727
+    second: _inLooseUI_16
+  - first:
+      213: 5445690336973126548
+    second: _inLooseUI_17
+  - first:
+      213: 8170702742997915147
+    second: _inLooseUI_18
+  - first:
+      213: -5948378055614786387
+    second: _inLooseUI_19
+  - first:
+      213: -8367938470469400957
+    second: _inLooseUI_20
+  - first:
+      213: 3014853145342017315
+    second: _inLooseUI_21
+  - first:
+      213: -300620491902110927
+    second: _inLooseUI_22
+  - first:
+      213: 765459205728821915
+    second: _inLooseUI_23
+  - first:
+      213: 3208349360649046556
+    second: _inLooseUI_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: _inLooseUI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 241
+        width: 196
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e029e94a6f2371690800000000000000
+      internalID: -7631575008650817010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_1
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 289
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e66aa33dea45d30800000000000000
+      internalID: 4419349356602617408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 290
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1563dba5d0b99f70800000000000000
+      internalID: 9194574546010858778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_3
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 289
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0484ee298ebaa32d0800000000000000
+      internalID: -3298134761709615040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 289
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e030990fc45ceb980800000000000000
+      internalID: -8521156510693653746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_5
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 289
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d2fd49cb6043940800000000000000
+      internalID: 5274848470578965785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_6
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 289
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e77f6e51235f2670800000000000000
+      internalID: 8516116823164286946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_7
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 267
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ca93c022832b6b0800000000000000
+      internalID: -5282097694067020676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_8
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 268
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a55dbdba45bb82a0800000000000000
+      internalID: -6734089485186935390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_9
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 267
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad08b843d004a9e0800000000000000
+      internalID: -1611161859233673816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_10
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 251
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7c9b9f1efe82e10800000000000000
+      internalID: 2173250574042646447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_11
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 251
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772ac438e9bc71f60800000000000000
+      internalID: 8005090744342454903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_12
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 251
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6253060f28a213b30800000000000000
+      internalID: 4265237063963522342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 194
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4147168c591594250800000000000000
+      internalID: 5929360088163775508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_14
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 216
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd08b0cceea845b0800000000000000
+      internalID: -5383861022652625411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_15
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 216
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc68d755bf549980800000000000000
+      internalID: -8533090161492726607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_16
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 216
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e749aa098245c470800000000000000
+      internalID: 8414204635168458727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 194
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b7f0c428af29b40800000000000000
+      internalID: 5445690336973126548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_18
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 181
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0653b1cada246170800000000000000
+      internalID: 8170702742997915147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_19
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 181
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da41a5d9cad137da0800000000000000
+      internalID: -5948378055614786387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_20
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 181
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386885ddb4c1fdb80800000000000000
+      internalID: -8367938470469400957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 136
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f741a56f8e6d920800000000000000
+      internalID: 3014853145342017315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_22
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 138
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133b8ff514bf3dbf0800000000000000
+      internalID: -300620491902110927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 42
+        width: 136
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92e48f87157f9a00800000000000000
+      internalID: 765459205728821915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _inLooseUI_24
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 95
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a86d4beb8568c20800000000000000
+      internalID: 3208349360649046556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -372,8 +372,19 @@
         <e p="Scripts" t="Include">
           <e p="Drotic.cs" t="Include" />
           <e p="DroticsController.cs" t="Include" />
+          <e p="ExitScript.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GoldenStatueLight.cs" t="Include" />
           <e p="InGameOnlineCallbacks.cs" t="Include" />
+          <e p="Items" t="Include">
+            <e p="BigLight.cs" t="Include" />
+            <e p="BlueStone.cs" t="Include" />
+            <e p="GoldenStatue.cs" t="Include" />
+            <e p="HatItem.cs" t="Include" />
+            <e p="IitemsPickupable.cs" t="Include" />
+            <e p="Keys.cs" t="Include" />
+            <e p="RedStone.cs" t="Include" />
+          </e>
           <e p="ITrapSetter.cs" t="Include" />
           <e p="LightScript.cs" t="Include" />
           <e p="LyingSharps.cs" t="Include" />

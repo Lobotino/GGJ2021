@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 687234643242481227}
   - component: {fileID: 3340583406069115112}
   m_Layer: 0
-  m_Name: StoneVertical
+  m_Name: StoneVerticalDown
   m_TagString: Traps
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,6 +219,7 @@ MonoBehaviour:
   startRotationForHorizontal: 100
   isVertical: 1
   isLeft: 0
+  isUp: 0
 --- !u!114 &6038883755868505943
 MonoBehaviour:
   m_ObjectHideFlags: 0

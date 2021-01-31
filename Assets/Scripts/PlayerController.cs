@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using Photon.Pun;
 using UnityEngine;
+using UnityEngine.UI;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -21,8 +22,10 @@ public class PlayerController : MonoBehaviour, IPunObservable
     
     public int health = 100;
     public int heardsUiCount = 5;
-    public bool isDead;
+    public bool isDead, isInHat, hasBlueStone, hasRedStone, hasBigLight, hasGoldenStatue;
+    public int keysCount = 0;
     public GameObject[] heardUI, brokenHeardsUI;
+    public Text countOfKeysText;
     
     
     private bool isMoveHorizontal, isFlip, isMoveForward, isMoveBackward, isIdle = true;
@@ -39,6 +42,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
         _animator = GetComponent<Animator>();
         _lightScript = GetComponent<LightScript>();
         mainCamera = GameObject.Find("Main Camera");
+        countOfKeysText = GameObject.Find("keysCountText").GetComponent<Text>();
 
         for (int i = 0; i < 5; i++)
         {
@@ -49,26 +53,6 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
     void FixedUpdate()
     {
-        heardsUiCount = health / 20;
-        for (var i = 0; i < 5; i++)
-        {
-            if (i > heardsUiCount)
-            {
-                heardUI[i].SetActive(false);
-                brokenHeardsUI[i].SetActive(true);
-            }
-            else
-            {
-                heardUI[i].SetActive(true);
-                brokenHeardsUI[i].SetActive(false);
-            }
-        }
-        if (health <= 0)
-        {
-            MakeDeath();
-        }
-        
-        
         CheckSound();
         CheckAnimation();
 
@@ -77,12 +61,51 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
         if (_photonView.IsMine)
         {
+            heardsUiCount = health / 20;
+            for (var i = 0; i < 5; i++)
+            {
+                if (i > heardsUiCount)
+                {
+                    heardUI[i].SetActive(false);
+                    brokenHeardsUI[i].SetActive(true);
+                }
+                else
+                {
+                    heardUI[i].SetActive(true);
+                    brokenHeardsUI[i].SetActive(false);
+                }
+            }
+            if (health <= 0)
+            {
+                MakeDeath();
+            }
+            
             MovePlayer(position);
             mainCamera.transform.position = new Vector3(position.x, position.y, -50);
 
+            countOfKeysText.text = keysCount.ToString();
+        }
+    }
+
+    public void Update()
+    {
+        if (_photonView.IsMine)
+        {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                //do some action
+                DoAction();
+            }
+        }
+    }
+
+    public void DoAction()
+    {
+        var colliders = Physics2D.OverlapCircleAll(gameObject.transform.position, 1f);
+        foreach (var col in colliders)
+        {
+            if (col.tag.Equals("Item"))
+            {
+                col.gameObject.GetComponent<IitemsPickupable>().OnItemPickup(this);
             }
         }
     }
@@ -233,22 +256,34 @@ public class PlayerController : MonoBehaviour, IPunObservable
         if (stream.IsWriting)
         {
             stream.SendNext(health);
+            stream.SendNext(keysCount);
             stream.SendNext(isIdle);
             stream.SendNext(isFlip);
             stream.SendNext(isMoveBackward);
             stream.SendNext(isMoveForward);
             stream.SendNext(isMoveHorizontal);
             stream.SendNext(isDead);
+            stream.SendNext(isInHat);
+            stream.SendNext(hasBlueStone);
+            stream.SendNext(hasBigLight);
+            stream.SendNext(hasGoldenStatue);
+            stream.SendNext(hasRedStone);
         }
         else
         {
             health = (int) stream.ReceiveNext();
+            keysCount = (int) stream.ReceiveNext();
             isIdle = (bool) stream.ReceiveNext();
             isFlip = (bool) stream.ReceiveNext();
             isMoveBackward = (bool) stream.ReceiveNext();
             isMoveForward = (bool) stream.ReceiveNext();
             isMoveHorizontal = (bool) stream.ReceiveNext();
             isDead = (bool) stream.ReceiveNext();
+            isInHat = (bool) stream.ReceiveNext();
+            hasBlueStone = (bool) stream.ReceiveNext();
+            hasBigLight = (bool) stream.ReceiveNext();
+            hasGoldenStatue = (bool) stream.ReceiveNext();
+            hasRedStone = (bool) stream.ReceiveNext();
         }
     }
 

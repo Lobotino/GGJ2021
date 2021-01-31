@@ -16,7 +16,7 @@ public class StoneController : MonoBehaviour, ITrapSetter
     public float startRotationForHorizontal = 100;
 
     public bool isVertical = true;
-    public bool isLeft;
+    public bool isLeft, isUp;
     void Start()
     {
         _animator = GetComponent<Animator>();
@@ -28,7 +28,7 @@ public class StoneController : MonoBehaviour, ITrapSetter
     {
         if (isVertical)
         {
-            _rigidbody2D.AddForce(new Vector2(0, -startForce), ForceMode2D.Impulse);
+            _rigidbody2D.AddForce(new Vector2(0, isUp ? startForce : -startForce), ForceMode2D.Impulse);
         }
         else
         {
@@ -78,7 +78,7 @@ public class StoneController : MonoBehaviour, ITrapSetter
         RaycastHit2D neighbortCell = Physics2D.Raycast(worldPos, Vector2.zero);
         if (neighbortCell.collider == null || !neighbortCell.collider.gameObject.tag.Equals("Borders") && !neighbortCell.collider.gameObject.tag.Equals("Traps"))
         {
-            PhotonNetwork.Instantiate(isVertical ? "StoneVertical" : isLeft ? "StoneLeft" : "StoneRight", worldPos, Quaternion.identity);
+            PhotonNetwork.Instantiate(isVertical ? isUp ? "StoneVerticalUp" : "StoneVerticalDown" : isLeft ? "StoneLeft" : "StoneRight", worldPos, Quaternion.identity);
             return true;
         }
 
