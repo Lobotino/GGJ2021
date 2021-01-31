@@ -56,14 +56,14 @@ TagManager:
   - name: Traps1
     uniqueID: 2482149761
     locked: 0
+  - name: Items
+    uniqueID: 3902347319
+    locked: 0
   - name: Traps2
     uniqueID: 3240203717
     locked: 0
   - name: TrupsCup
     uniqueID: 3612507433
-    locked: 0
-  - name: Items
-    uniqueID: 3902347319
     locked: 0
   - name: Player
     uniqueID: 878067523

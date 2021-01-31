@@ -14,9 +14,25 @@ public class DroticsController : MonoBehaviour, ITrapSetter
 
     public float cellParallax = 1.5f;
 
+    public TrapPrefs trapPrefs;
+    
     void Start()
     {
-        ShotDrotics();
+        trapPrefs = GetComponent<TrapPrefs>();
+        if (trapPrefs == null)
+        {
+            trapPrefs = GetComponentInChildren<TrapPrefs>();
+            if (trapPrefs == null)
+                trapPrefs = GetComponentInParent<TrapPrefs>();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag.Equals("Player") && !trapPrefs.isBroken)
+        {
+            ShotDrotics();
+        }
     }
 
     public void ShotDrotics()

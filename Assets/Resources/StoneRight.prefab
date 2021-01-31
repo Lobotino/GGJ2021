@@ -272,3 +272,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manaCost: 80
+  isBroken: 0

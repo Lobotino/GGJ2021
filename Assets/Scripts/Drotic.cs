@@ -10,6 +10,8 @@ public class Drotic : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
 
     private RemovableItem _removableItem;
+
+    private bool isLanded;
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -18,12 +20,12 @@ public class Drotic : MonoBehaviour
     
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.gameObject.tag.Equals("Drotic") && !other.gameObject.tag.Equals("Floors"))
+        if (!other.gameObject.tag.Equals("Drotic") && !other.gameObject.tag.Equals("Floors") && !other.gameObject.tag.Equals("Traps"))
         {
             if (other.tag.Equals("Player"))
             {
                 var player = other.gameObject.GetComponent<PlayerController>();
-                if (player != null && !player.IsDead())
+                if (!isLanded && player != null && !player.IsDead())
                 {
                     player.Hurt(damage);
                     Destroy(this);
@@ -35,6 +37,7 @@ public class Drotic : MonoBehaviour
                 {
                     _rigidbody2D.velocity = new Vector2(0, 0);
                     _removableItem.DestroySelfAfterTimer();
+                    isLanded = true;
                 }
             }
         }

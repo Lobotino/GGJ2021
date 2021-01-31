@@ -20,11 +20,17 @@ public class LyingSharps : MonoBehaviour, ITrapSetter
     private int currentSharpsUpDelay;
     
     private static readonly int IsActiveAnimationState = Animator.StringToHash("isActive");
-
+    
+    public TrapPrefs trapPrefs;
     void Start()
     {
         attackDelayInSeconds *= 50;
         sharpsUpDelayInSeconds *= 50;
+        trapPrefs = GetComponent<TrapPrefs>();
+        if (trapPrefs == null)
+        {
+            trapPrefs = GetComponentInChildren<TrapPrefs>();
+        }
     }
 
     void FixedUpdate()
@@ -52,7 +58,7 @@ public class LyingSharps : MonoBehaviour, ITrapSetter
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag.Equals("Player"))
+        if (other.tag.Equals("Player") && !trapPrefs.isBroken)
         {
             HurtPlayer(other.gameObject);
         }

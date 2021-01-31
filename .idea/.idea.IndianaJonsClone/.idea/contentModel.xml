@@ -370,6 +370,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="DoorScript.cs" t="Include" />
           <e p="Drotic.cs" t="Include" />
           <e p="DroticsController.cs" t="Include" />
           <e p="ExitScript.cs" t="Include" />

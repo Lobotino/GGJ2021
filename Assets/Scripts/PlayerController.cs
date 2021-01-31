@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Threading;
+using ExitGames.Client.Photon.StructWrapping;
 using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,7 +28,8 @@ public class PlayerController : MonoBehaviour, IPunObservable
     public int keysCount = 0;
     public GameObject[] heardUI, brokenHeardsUI;
     public Text countOfKeysText;
-    
+
+    public GameManager gameManager;
     
     private bool isMoveHorizontal, isFlip, isMoveForward, isMoveBackward, isIdle = true;
     private static readonly int IsMoveForward = Animator.StringToHash("isMoveForward");
@@ -42,6 +45,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
         _animator = GetComponent<Animator>();
         _lightScript = GetComponent<LightScript>();
         mainCamera = GameObject.Find("Main Camera");
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         countOfKeysText = GameObject.Find("keysCountText").GetComponent<Text>();
 
         for (int i = 0; i < 5; i++)
@@ -79,9 +83,12 @@ public class PlayerController : MonoBehaviour, IPunObservable
             {
                 MakeDeath();
             }
-            
-            MovePlayer(position);
-            mainCamera.transform.position = new Vector3(position.x, position.y, -50);
+
+            if (!isDead)
+            {
+                MovePlayer(position);
+                mainCamera.transform.position = new Vector3(position.x, position.y, -50);
+            }
 
             countOfKeysText.text = keysCount.ToString();
         }
@@ -106,6 +113,17 @@ public class PlayerController : MonoBehaviour, IPunObservable
             if (col.tag.Equals("Item"))
             {
                 col.gameObject.GetComponent<IitemsPickupable>().OnItemPickup(this);
+            }
+            else
+            {
+                if (col.tag.Equals("Traps"))
+                {
+                    if (keysCount > 0 && !col.gameObject.GetComponent<TrapPrefs>().isBroken)
+                    {
+                        keysCount--;
+                        col.gameObject.GetComponent<TrapPrefs>().isBroken = true;
+                    }
+                }
             }
         }
     }
@@ -291,6 +309,8 @@ public class PlayerController : MonoBehaviour, IPunObservable
     {
         health -= damage;
         Debug.Log("That was hurt... Current health: " + health);
+
+        StartCoroutine(HurtCoroutine());
         
         if (health <= 0)
         {
@@ -298,14 +318,25 @@ public class PlayerController : MonoBehaviour, IPunObservable
         }
     }
 
+    IEnumerator HurtCoroutine()
+    {
+        _spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        _spriteRenderer.color = Color.white;
+    }
+    
+
     public void MakeDeath()
     {
         for (var i = 0; i < 5; i++)
         {
             heardUI[i].SetActive(false);
             brokenHeardsUI[i].SetActive(true);
+            
         }
         isDead = true;
+        gameManager.ShowLoose();
+        Destroy(gameObject);
     }
 
     public bool IsDead()

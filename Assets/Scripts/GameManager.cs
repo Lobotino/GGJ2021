@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour, IPunObservable
 
     public GameObject winUI, looseUI;
     
-    public GameObject playerUI, masterUI;
+    public GameObject playerUI, masterUI, playerPamyatka, masterPamyatka;
 
     public bool isGoldenStatueStolen;
 
@@ -29,6 +29,12 @@ public class GameManager : MonoBehaviour, IPunObservable
             PrepareMasterGame();
         }
     }
+
+    public void HideDesc()
+    {
+        playerPamyatka.SetActive(false);
+        masterPamyatka.SetActive(false);
+    }
     private void PrepareMasterGame()
     {
         masterLight.SetActive(true);
@@ -39,7 +45,7 @@ public class GameManager : MonoBehaviour, IPunObservable
 
     private void PreparePlayerGame()
     {
-        UserProperties.LocalPlayerInstance = PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(-98.56f, -131.49f, 0f), Quaternion.identity);
+        UserProperties.LocalPlayerInstance = PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(-86.38f, -71.47f, 0f), Quaternion.identity);
         UserProperties.LocalPlayerInstance.name = "Player(" + PhotonNetwork.LocalPlayer.UserId + ")";
         UserProperties.UserId = PhotonNetwork.LocalPlayer.UserId;
         
